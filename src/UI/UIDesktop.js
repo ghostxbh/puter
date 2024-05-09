@@ -42,7 +42,7 @@ async function UIDesktop(options){
 
     // connect socket.
     window.socket = io(window.gui_origin + '/', {
-        query: {
+        auth: {
             auth_token: window.auth_token
         }
     });
